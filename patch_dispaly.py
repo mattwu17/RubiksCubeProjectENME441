@@ -16,7 +16,7 @@ for s, e in combinations(np.array(list(product(r,r,r))), 2):
 
 colors = ['b', 'g', 'r', 'c', 'm', 'y']
 for i, (z, zdir) in enumerate(product([-3,3], ['x','y','z'])):
-    print(f"color : {colors[i]}    z: {z}    zdir: {zdir}")
+    #print(f"color : {colors[i]}    z: {z}    zdir: {zdir}")
     side = Rectangle((-3, -3), 2, 2, facecolor=colors[i])
     ax.add_patch(side)
     art3d.pathpatch_2d_to_3d(side, z=z, zdir=zdir)
